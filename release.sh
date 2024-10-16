@@ -21,7 +21,7 @@ if ! grep -q "spec.version *= *'$VERSION'" DaroMAds.podspec; then
 fi
 
 # Check if DaroM.xcframework.zip exists
-if [ ! -f "DaroM.xcframework.zip" ]; then
+if [ ! -f "build/DaroM.xcframework.zip" ]; then
   echo "DaroM.xcframework.zip file not found"
   exit 1
 fi
