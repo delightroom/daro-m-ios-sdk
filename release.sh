@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # Ensure a version number is provided
 if [ -z "$1" ]; then
   echo "Usage: $0 <version>"
@@ -22,12 +24,12 @@ fi
 
 # Check if DaroM.xcframework.zip exists
 if [ ! -f "build/DaroM.xcframework.zip" ]; then
-  echo "DaroM.xcframework.zip file not found"
+  echo "build/DaroM.xcframework.zip file not found"
   exit 1
 fi
 
 # Create a tag and release using GitHub CLI with the file
-gh release create $VERSION "DaroM.xcframework.zip" --title "Release $VERSION" --notes "Release version $VERSION"
+gh release create $VERSION "build/DaroM.xcframework.zip" --title "Release $VERSION" --notes "Release version $VERSION"
 
 # Push the podspec to the trunk
 pod trunk push DaroMAds.podspec --allow-warnings --verbose
