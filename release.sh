@@ -33,9 +33,9 @@ if [ ! -f "$SCRIPT_DIR/build/DaroM.xcframework.zip" ]; then
   exit 1
 fi
 
-# Create a tag and release using GitHub CLI with the file
-gh release create $VERSION "$SCRIPT_DIR/build/DaroM.xcframework.zip" --title "Release $VERSION" --notes "Release version $VERSION"
-git pull origin main
+# # Create a tag and release using GitHub CLI with the file
+# gh release create $VERSION "$SCRIPT_DIR/build/DaroM.xcframework.zip" --title "Release $VERSION" --notes "Release version $VERSION"
+# git pull origin main
 
-# Push the podspec to the trunk
-pod trunk push "$PODSPEC_PATH" --allow-warnings --verbose
+# # Push the podspec to the trunk
+# pod trunk push "$PODSPEC_PATH" --allow-warnings --verbose
