@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'DaroMAds'
-  spec.version = '1.0.5'
+  spec.version = '1.0.6'
   spec.summary = 'Ad network mediation sdk for iOS.'
   spec.description = <<-DESC
                       Daro is is a SDK that helps you to easily integrate ad networks into your app.
@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
   spec.vendored_frameworks = 'DaroM.xcframework'
 
-  spec.dependency 'AppLovinSDK', '13.0.1'
+  spec.dependency 'AppLovinSDK', '13.1.0'
   spec.dependency 'AppLovinMediationFyberAdapter'
   spec.dependency 'AppLovinMediationGoogleAdapter'
   spec.dependency 'AppLovinMediationInMobiAdapter'
