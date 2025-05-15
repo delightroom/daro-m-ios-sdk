@@ -11,8 +11,8 @@ fi
 VERSION=$1
 
 # Validate the version format
-if [[ ! $VERSION =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-  echo "Version must be in the format x.x.x"
+if [[ ! $VERSION =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9]+)?$ ]]; then
+  echo "Version must be in the format x.x.x or x.x.x-tag (e.g., 1.0.0 or 1.0.0-beta)"
   exit 1
 fi
 
