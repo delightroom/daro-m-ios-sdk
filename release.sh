@@ -21,8 +21,11 @@ PODSPEC_PATH="$SCRIPT_DIR/DaroMAds.podspec"
 
 # Update version in podspec file
 sed -i '' "s/spec\.version = '[0-9]\{1,\}\.[0-9]\{1,\}\.[0-9]\{1,\}'/spec.version = '$VERSION'/" "$PODSPEC_PATH"
+echo "Updated podspec file:"
+cat "$PODSPEC_PATH"
 
 # Commit and push the changes
+echo "git add ."
 git add .
 git commit -m "Bump version to $VERSION"
 git push origin main
