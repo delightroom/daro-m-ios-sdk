@@ -22,7 +22,7 @@ PODSPEC_PATH="$SCRIPT_DIR/DaroMAds.podspec"
 # Update version in podspec file
 pushd "$SCRIPT_DIR"
 echo "Current directory after pushd: $(pwd)"
-sed -i '' "s/spec\.version = '[0-9]\{1,\}\.[0-9]\{1,\}\.[0-9]\{1,\}-[a-zA-Z0-9]*'/spec.version = '$VERSION'/" "$PODSPEC_PATH"
+sed -i '' "s/spec\.version = '.*'/spec.version = '$VERSION'/" "$PODSPEC_PATH"
 if ! git diff --quiet "$PODSPEC_PATH"; then
     echo "Podspec 파일이 성공적으로 업데이트되었습니다."
 else
