@@ -38,6 +38,5 @@ Pod::Spec.new do |spec|
   spec.dependency 'AppLovinMediationAmazonAdMarketplaceAdapter', '5.2.0.0'
   spec.dependency 'AppLovinMediationMolocoAdapter', '3.9.1.0'
   spec.dependency 'AppLovinMediationLineAdapter', '2.9.20250512.0'
-  spec.dependency 'DaroMCore', '1.1.4'
 
 end
