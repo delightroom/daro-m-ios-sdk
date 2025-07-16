@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.author = { 'Won Jo' => 'lion@delightroom.com' }
   spec.source = { :http => "https://github.com/delightroom/daro-m-ios-sdk/releases/download/#{spec.version}/DaroM.xcframework.zip" }
   spec.swift_version = '5.7'
-  spec.ios.deployment_target = '14.1'
+  spec.ios.deployment_target = '13.0'
 
   spec.resource_bundles = {
     'DaroMAdsResources' => ['DaroM.xcframework/ios-arm64/DaroM.framework/PrivacyInfo.xcprivacy']
