@@ -39,4 +39,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'AppLovinMediationMolocoAdapter', '3.9.1.0'
   spec.dependency 'AppLovinMediationLineAdapter', '2.9.20250512.0'
 
+  # Didomi
+  spec.dependency 'Didomi-XCFramework', '2.26.3'
+
 end
